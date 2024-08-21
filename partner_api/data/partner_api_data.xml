@@ -1,0 +1,16 @@
+<odoo>
+    <data noupdate="1">
+        <record id="partner_api_user" model="res.users" context="{'no_reset_password': True}">
+            <field name="name">Partner API User</field>
+            <field name="login">partner_api_user</field>
+            <field name="groups_id" eval="[(6, 0, [])]" />
+        </record>
+        <record model="fastapi.endpoint" id="fastapi_endpoint_partner_api">
+            <field name="name">Partner API</field>
+            <field name="description">Prueba de Partner API</field>
+            <field name="app">partner_api</field>
+            <field name="root_path">/partner_api</field>
+            <field name="user_id" ref="partner_api_user" />
+        </record>
+    </data>
+</odoo>
