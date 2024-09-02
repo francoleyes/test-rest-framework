@@ -1,6 +1,6 @@
 {
     'name': 'Partner API',
-    'version': "17.0.1.0.0",
+    'version': "17.0.1.3.0",
     'category': 'API',
     'author': 'Franco Leyes',
     'license': 'LGPL-3',
